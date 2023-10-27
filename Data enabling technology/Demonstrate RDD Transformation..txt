@@ -1,0 +1,54 @@
+Aim: Demonstrate RDD Transformation.
+
+Steps:
+
+1. Open terminal and write spark-shell
+
+2. We have to create a file. For creating a file go to home tab >> Right Click to create document
+>> empty file. Give the name of file as “Data_WordCount”. Create a file with space separted.
+
+3. To read the file that we have created on home/cloudera. Write the below command-
+
+scala» val rddl=sc.textFile("file:///home/cloudera/Data WordCount")
+
+4, To check if file is loaded
+
+scala» rddl.count()
+
+5. Now, we will perform some transformation method-
+scala» val rdd2=rddl.flatMap(f==f.split(" "))
+
+Resulting RDD consist of a single word of each record
+
+scala> rdd2.foreach({println)
+
+b. map() — map() transformation is used to apply any complex operation like adding a
+column, updating a column etc the output of map transformations would always have the
+same number of records as an input.
+
+scala= val rdd3=rdd2.map(m==(m,1))
+
+scala» rdd3.foreach(println)
+
+
+c. filter() — filter() transformation is used to filter the records in an RDD. In this we are
+filtering all words start with “h”.
+
+scala» val rdd4=rdd3.filter(a==a. l.startswith("h"))
+
+scala> rdd4.foreach(println)
+
+d. reduceByKey() — reduceByKey() merges the values for each key with the function
+specified.
+
+scala» val rdd5=rdd4.reduceByKey( + )
+
+scala> rdd5.foreach(println)
+
+e. sortByKey() — sortByKey() transformation is used to sort RDD elements on key.
+In this ex, we will convert RDD[(String,Int)] to RDD[(Int,String)]
+
+scala> val rddé=rdd5.map(a=>(a. 2,a. 1)).sortByKey()
+
+scala> rddé.foreach(println)
+

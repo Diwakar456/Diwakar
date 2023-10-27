@@ -1,0 +1,56 @@
+Aim: Demonstrate Actions Method.
+
+a. count() — Returns the number of records in an RDD.
+
+scala= println("Count:"+rdd6.count())
+
+b. first() — Returns the first record.
+
+scala= val firstRecord=rdde6.first()
+
+scala> println("First Record of RDD :"+firstRecord)
+
+
+c. max() — Returns max() record.
+
+scala= val lastRecord=rdd6.max()
+
+scala> println("Last Record of RDD :"+lastRecord)
+
+
+d. reduce() — Reduces the records to single, we can use this to count or sum.
+
+scala> val totalWordCount=rdd6.reduce((a,b)=={a. 1+b. 1,a. 2})
+
+scala= println("DataReduce Record :"+totalWordCount. 1)
+
+e. take() — Returns the record specified as an argument.
+
+scala> val data3=rdd6.take(3)
+
+scala> datal3.foreach(println)
+
+
+f. collect() — Returns all data from RDD as an array.
+
+scala= val datacollect=rdd6.collect()
+scala= datacollect.foreach(println)
+
+
+g. saveAsTextFile() — Using saveAsTextFile() action, we can write the RDD to a text file.
+
+scala= rdd6.saveAsTextFile("file:///home/cloudera/Data WordCountOutput")
+
+
+[7] Data_WordCountOutput
+
+File Edit View Places Help
+
+{4,he |
+lta. he
+
+part-00000 _SUCCESS
+
+Data_WordCountOu... ~ | 2 items, Free space; 42.5 GB
+
+

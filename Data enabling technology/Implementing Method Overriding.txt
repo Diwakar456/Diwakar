@@ -1,0 +1,41 @@
+Aim : Implementing Method Overriding
+
+
+namespace Overriding
+{
+    class BaseClass
+    {
+        public void Method()
+        {
+            Console.WriteLine("Base-Method1");
+        }
+    }
+   
+    class DerivedClass : BaseClass
+    {
+        public void Method2()
+        {
+            Console.WriteLine("Derived - Method2");
+        }
+
+    }
+    class Program
+    {
+        // Main Method 
+        public static void Main()
+        {  
+            BaseClass bc = new BaseClass();
+            bc.Method(); //Base - Method1 
+
+            DerivedClass dc = new DerivedClass();
+            dc.Method();//BAse - Method1
+            dc.Method2(); // Derived - Method2
+
+            BaseClass bcdc = new DerivedClass();
+            bcdc.Method(); // Base-Method1
+
+            Console.ReadLine();
+                           
+        }
+    }
+}

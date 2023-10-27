@@ -1,0 +1,15 @@
+Case Study: Managing Emerging Technologies at Netflix
+
+Topic: Case Study: How Netflix uses AI to personalize its movie recommendations
+Introduction
+Netflix is the world's leading subscription streaming service, with over 220 million subscribers in over 190 countries. Netflix uses artificial intelligence (AI) to personalize its movie recommendations for each user. This helps Netflix to keep its users engaged and satisfied, and to reduce churn.
+Methodology
+Netflix uses a variety of AI techniques to personalize its movie recommendations. These techniques include:
+●	Machine learning: Machine learning algorithms are used to analyze user data, such as viewing history, ratings, and search queries. This data is used to predict what movies each user is likely to enjoy.
+●	Natural language processing (NLP): NLP algorithms are used to extract information from movie descriptions, reviews, and other text sources. This information is used to create a profile of each movie, which is then used to match movies to users' interests.
+●	Deep learning: Deep learning algorithms are used to learn complex patterns in the data. This allows Netflix to make more accurate recommendations, even for users with very specific tastes.
+
+Results
+Netflix's AI-powered recommendation system is very effective. According to Netflix, over 80% of the movies that users watch are discovered through recommendations. This has helped Netflix to reduce churn and become one of the most successful companies in the world.
+Conclusion
+Netflix's use of AI to personalize its movie recommendations is a great example of how AI can be used to improve the customer experience. Netflix's recommendation system is highly effective and has helped the company to become one of the most successful companies in the world.

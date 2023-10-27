@@ -1,0 +1,41 @@
+Aim: To have marks of all the students of a class with Roll Number in CSV file.
+Calculate the percentage of marks of student in Spark using Scala.
+
+Steps:
+
+1. Open Terminal and write command spark-shell
+
+2. We have to create a file. For creating a file go to home tab >> Right Click to create document
+>> empty file. Give the name of file as “marks.csv”.
+
+3. Then, for reading the file that we have to put the below command
+
+scala> var ip marks=sc.textFile("file:///home/cloudera/marks.csv")
+
+4, Using collect() we will get all the RDD data in form of array
+
+scala> ip marks.collect()
+
+5. Using map() function we will a Data Frame of RDD
+
+scala> var List marks=ip marks.map(x=>(x.split(’,')(®),List(x.split(’,"}(1).toFloa
+t,x.split(’,")(2).toFloat,x.split(’,")(3).toFloat,x.split(',"')(4).toFloat,x.split(
+',")(5).toFloat,x.split(',')(6).toFloat)))
+
+6. Using collect() we will get all the RDD data in form of array
+
+scala> List marks.collect()
+
+7. Now, we will use formula to calculate the percentage of marks
+
+scala» var per marks=List marks.mapValues(x=>x.sum/x.length)
+
+
+8. Using collect() function we will see the output of all calculation
+
+scala> per marks.collect()
+
+
+9. Using saveAsTextFile we can save the output of our file
+
+scala>= per marks.saveAsTextFile("file:///home/cloudera/marks output.csv")
